@@ -165,16 +165,7 @@ arreglo.map(function(elementoActual, indice, arregloOriginal) {  ... código });
 
 map() recibe como parámetro una función la cual recibe 3 parámetros, el elemento actual, indice del elemento actual y el arreglo original.
 
-Sintaxis
-var nuevo_array = arr.map(function callback(currentValue, index, array) {
-    // Elemento devuelto de nuevo_array
-}[, thisArg])
 
-value: El elemento actual del array que se esta procesando.
-index: El elemento actual del array que se esta procesando
-array: El array sobre el que se esta produciendo el metodo map
-thisArg: ES un valor opcional, podemos usarlo como this al ejecutar la funcion
-*/
 
 //EJERCICIOS DE PRUEBA:
 
