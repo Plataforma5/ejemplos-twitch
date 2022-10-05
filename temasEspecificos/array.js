@@ -149,32 +149,6 @@ let numbers = [6, 1, 34, 94, 3, 17] ==> 155 */
 
 /* let numbers = [2, 4, 10, 20]; //=> 36 */
 
-let sumaTotal = (numero) => {
-  //CREAMOS LA VARIABLE sumaTotal y como valor le pasamos una arrow function
-  let acumuladora = 0;
-  numero.forEach(function (num) {
-    //a nuestro parametro numbers le instaciamos el metodo forEach() para que recorra y haga un bucle en todos los elementos del arreglo!
-    acumuladora += num;
-  });
-  return acumuladora;
-};
-sumaTotal(numbers);
-
-/* let numbers = [6, 1, 34, 94, 3, 17]; */
-
-function sumaTotal(numbers) {
-  //craemos la funcion le dimos como nombre "sumaTotal", y le passamos un parametro
-  let total = 0; // creamos la variable "total" y la estamos utilizando como acumuladora!
-
-  numbers.forEach(function (num) {
-    //a nuestro parametro numbers le instaciamos el metodo forEach() para que recorra y haga un bucle en todos los elementos del arreglo!
-    total += num;
-  });
-  return total; //en ultima instancia pedimos que retorne la variable en donde tiene la suma total de todos los elementos!
-}
-sumaTotal(numbers);
-
-
 ("---------------CLASE MAP------------------");
 
 /* 
@@ -225,7 +199,6 @@ console.log(triplicador);
 const multiplicador = numeros.map((numero) => numero * 2);
 console.log(multiplicador);
 
-
 ("-----------------CLASE FILTER---------------");
 /* 
 El metodo Filter() : nos permite filtrar solo los elementos que deseamos y devolverlos en un nuevo array.
@@ -268,9 +241,9 @@ let numbers = [3, 7, 6, 13, 2, 24, 99];
 let numeros = numbers.filter((arr) => {
   if (arr % 2 == 0) {
     return arr;
-  } 
+  }
 });
-console.log(numeros)
+console.log(numeros);
 
 /* 
 EJERCICIO:
@@ -284,4 +257,3 @@ let numbers = [1,5,23,4,12,45,78,8,8.9,10,11,3.4,10.1,84,6]
 LO QUE PODRIAMOS HACER DE MANERA SIMPLE SERIA LO SIGUIENTE:
 
 */
-
