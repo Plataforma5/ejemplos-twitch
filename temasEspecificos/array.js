@@ -147,7 +147,7 @@ Necesitamos calcular la suma total de todos los números en el array,
 utilizando forEach.
 let numbers = [6, 1, 34, 94, 3, 17] ==> 155 */
 
-let numbers = [2, 4, 10, 20]; //=> 36
+/* let numbers = [2, 4, 10, 20]; //=> 36 */
 
 let sumaTotal = (numero) => {
   //CREAMOS LA VARIABLE sumaTotal y como valor le pasamos una arrow function
@@ -240,7 +240,7 @@ Es como una maquina que va agarrando cada elemento y decide si pasa o no al nuev
 
 // const ciudades = ["Madrid", "Buenos Aires", "Nueva York"];
 
-const newArray = ciudades.filter((ciudad) => {
+/* const newArray = ciudades.filter((ciudad) => {
   console.log(ciudad);
 })
 
@@ -252,7 +252,7 @@ const newArray = ciudades.filter((ciudad) => {
   console.log(ciudad);
   return ciudad.length > 6;
 });
-console.log(newArray);
+console.log(newArray); */
 
 /* ------------------------------------------- */
 
