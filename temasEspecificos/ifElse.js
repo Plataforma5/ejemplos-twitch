@@ -1,57 +1,71 @@
-// ESTOY CONDICIONANDO LA EDAD PARA EL BAR
-let edad = Number(prompt("Ingrese su edad."));
-let nombre = prompt("cómo te llamas");
-let cumpleaniero = "jaime";
+let edad = prompt("¿Qué edad tenés?");
 
-if (cumpleaniero === nombre) {
-  alert("BIENVENIDO JAIME A TU CUMPLEAÑOS");
-} else {
-  alert("Hola amigo de jaime");
-}
+// ESTOY CONDICIONANDO LAS EDADES DEL BAR
+if (edad >= 18) {
+  //codigo
+  console.log("Ya sos mayor de edad");
 
-//TERNARIO
-//condicion              ?                   TRUE                  :               FALSE
-cumpleaniero === nombre
-  ? alert("BIENVENIDO JAIME A TU CUMPLEAÑOS")
-  : alert("Hola amigo de jaime");
-
-/* if (edad >= 18) {
-  alert("Bienvenido al Bar");
-  if (edad < 20) {
-    alert("Podes pasar pero no podés ingerir alcohol");
+  if (edad <= 20) {
+    console.log("Podés pasar al bar pero no podés ingerir alcohol");
+  } else if (edad == 21) {
+    console.log("Bienvenid@ a la mayoria de edad! Tenés una bebida gratis");
   } else {
-    alert("Discfruta de la bebida");
+    console.log("Podés pasar al bar y tomar una bebida");
   }
 } else {
-  alert("No podés ingresar al bar");
-} */
+  //codigo
+  console.log("Aún sos menor, NO PODÉS PASAR AL BAR");
+}
 
-/* if (edad > 21) {
-  //Me falta termina la condicion del saludo a los de 20 años
-  alert("Bienvenido al bar");
-} else if (edad === 17) {
-  alert("te falta poco para entrar ");
-} else if (edad == 15) {
-  alert("Feliz 15 años");
-} else {
-  alert("no pdoes entrar");
-} */
+//TERNARIOS
+// condicion ? true : false
 
-// = DECLARAR
-let n = "pepito";
-let apellido = "torrez";
+edad >= 18 ? console.log("Ya sos legal") : console.log("Todavía sos menor");
 
-// == COMPARACION
-nombre == apellido;
+// DECLARACION ==> =
+let x = 130;
+x = "Hola";
 
-// === COMPARACION ESTRICTA
-nombre === nombre;
+// OPERADORES
 
-//OPERADORES DE NEGACION
+//COMPARADORES DE IGUALDAD BLANDA--> ==
+23 == "23";
 
-console.log("true" === false);
+//COMPARADORES DE IGUALDAD ESTRICTA --> ===
+23 === "23";
 
-let x = 3;
-let y = 8;
+// < > >= <=
+34 > 23;
+98 < 9;
+45 <= 45;
+12 >= 0;
 
-!(x == "3" || x === y) && !(y !== 8 && x <= y);
+//COMPARADORES DE DESIGUALDAD BLANDA -->
+"Hola" != "hola";
+
+//COMPARADORES DE DESIGUALDAD ESTRICTA -->
+54 !== "54";
+
+//LOGICOS --> || , &&
+//BASTA CON QUE UN LADO DE true PARA QUE EL CODIGO SEA true
+false || true;
+
+//LOS DOS LADOS DEBEN SER true PARA QUE EL CODIGO SEA true
+true && true;
+
+//NEGACIÓN
+!true;
+!!false;
+
+//PRACTICA
+
+let z = 10;
+let y = 35;
+let str = "";
+let saludo = "hola";
+
+!(z !== 21 && y > 34) && !(z == "10" || z >= y);
+
+"10" === z || "" == str;
+
+!(z == "3" || z === y) && y !== 8 && z <= y;

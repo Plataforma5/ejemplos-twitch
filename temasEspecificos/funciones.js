@@ -22,25 +22,6 @@ const multiplicar = (numUno, numDos) => numUno * numDos;
 
 console.log(funcionAEjecutar(resta, multiplicar, 5, 5));
 
-//EJERCICIO 11
-const arreglos = {
-  join: (array, parametro) => {},
-  pop: (array) => array[array.length - 1],
-  filter: (array, func) => {},
-  map: (array, func) => {},
-};
-
-arreglos[pop];
-
-const pop = (array) => {
-  let posicion = array.length - 1;
-  console.log(posicion, "<--- soy la posicioon");
-  return array[posicion];
-};
-const join = () => {};
-const filter = () => {};
-
-pop([1, 2, 3, 4, 5]);
 
 /////////////////////////////////
 
@@ -171,26 +152,5 @@ console.log(cuadrado(5));
 let decirHola = () => console.log("Hola!");
 decirHola();
 
-// 6 SIMILAR .SPLIT()
-function split(string) {
-  let array = [];
-  for (let i = 0; i < string.length; i++) {
-    const element = string[i];
-    array.push(element);
-  }
-  return array;
-}
 
 
-// 8 MOVER CEROS
-function moveZeros(array) {
-  NewArray = array;
-  for (let i = 0; i < NewArray.length; i++) {
-    //const element = array[i];
-    if (NewArray[i] === 0) {
-      let splice = NewArray.splice(i, 1);
-      NewArray.push(Number(splice));
-    }
-  }
-  return NewArray;
-}
